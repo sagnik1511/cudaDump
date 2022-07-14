@@ -13,7 +13,7 @@ int main(){
     int *d_a, *d_b;
 
     cudaMalloc(&d_a, sizeof(int));
-    cudaMalloc(&d_b, sieof(int));
+    cudaMalloc(&d_b, sizeof(int));
 
     cudaMemcpy(d_a, &a, sizeof(int), cudaMemcpyHostToDevice);
     cudaMemcpy(d_b, &b, sizeof(int), cudaMemcpyHostToDevice);
